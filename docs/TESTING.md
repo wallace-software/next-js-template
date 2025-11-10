@@ -1,6 +1,6 @@
 # Testing Playground
 
-Development-only testing environment for visual testing and component exploration.
+Complete Jest testing environment with interactive browser UI and 32+ working test examples.
 
 ## Access
 
@@ -10,19 +10,26 @@ Development-only testing environment for visual testing and component exploratio
 
 ## Features
 
+### Unit Tests (`/testing/unit-tests`)
+
+- Interactive Jest test runner with visual feedback
+- 32 passing tests across components, hooks, and utilities
+- Real-time test execution simulation
+- Complete testing guide and examples
+
+### Hook Tests (`/testing/hook-tests`)
+
+- Live demonstration of `useScrollDirection` hook
+- Real-time scroll direction and "at top" state tracking
+- Hook testing examples and patterns
+- Template for creating your own hook tests
+
 ### Visual Testing (`/testing/visual`)
 
 - View all components in different states
 - Test button variants, badges, form inputs
 - Typography showcase
 - Dark/light mode testing
-
-### Planned Features
-
-- Component unit tests with live results
-- Hook testing playground
-- API endpoint testing
-- Integration test scenarios
 
 ## Running Tests
 
@@ -41,15 +48,23 @@ npm run test:coverage
 
 ```
 src/
-  __tests__/              # Test files
-    components/
-    hooks/
-    utils/
-  app/(dev)/              # Dev-only routes
+  __tests__/              # Jest test files (32 tests total)
+    components/           # Component tests
+      button.test.tsx     # 6 tests
+      badge.test.tsx      # 6 tests
+      card.test.tsx       # 8 tests
+    hooks/                # Hook tests
+      useScrollDirection.test.ts  # 5 tests
+    lib/                  # Utility tests
+      utils.test.ts       # 7 tests
+    jest.d.ts            # TypeScript declarations
+    README.md            # Complete testing guide
+  app/(dev)/             # Dev-only routes
     testing/
-      page.tsx            # Testing dashboard
-      visual/
-        page.tsx          # Visual component tests
+      page.tsx           # Testing dashboard
+      unit-tests/        # Interactive Jest runner
+      hook-tests/        # Live hook demonstrations
+      visual/            # Component visual testing
 ```
 
 ## Writing Tests

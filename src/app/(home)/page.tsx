@@ -76,7 +76,8 @@ const Home = () => {
                 </div>
                 <CardTitle>Next.js 15</CardTitle>
                 <CardDescription>
-                  Latest Next.js with App Router, Server Components, and React 19
+                  Latest Next.js with App Router, Server Components, and React
+                  19
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -138,7 +139,8 @@ const Home = () => {
                 </div>
                 <CardTitle>Best Practices</CardTitle>
                 <CardDescription>
-                  Clean architecture with organized components, hooks, and utilities
+                  Clean architecture with organized components, hooks, and
+                  utilities
                 </CardDescription>
               </CardHeader>
             </Card>
