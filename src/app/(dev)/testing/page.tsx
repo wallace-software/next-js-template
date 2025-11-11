@@ -69,16 +69,16 @@ const TestingPage = () => {
           <CardHeader>
             <div className="flex items-center justify-between">
               <FileCode className="h-8 w-8 text-purple-500" />
-              <Badge variant="outline">Coming Soon</Badge>
+              <Badge variant="default">Active</Badge>
             </div>
             <CardTitle className="mt-4">API Tests</CardTitle>
             <CardDescription>
-              Test API routes and server actions with mocked responses.
+              Test API routes and endpoints with automated test suites.
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <Button variant="outline" className="w-full" disabled>
-              View Tests
+            <Button asChild variant="default" className="w-full">
+              <Link href="/testing/api-tests">Run API Tests</Link>
             </Button>
           </CardContent>
         </Card>
